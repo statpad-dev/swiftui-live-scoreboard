@@ -1,0 +1,24 @@
+name: Something doesn't work
+description: The app, the server or the tests don't do what the README says.
+body:
+  - type: textarea
+    id: command
+    attributes:
+      label: What you ran
+      description: The command or Xcode scheme and destination, and the output or error.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: The output of `node --version` and `xcodebuild -version`.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Server mode
+      options: [--replay, --poll, stream]
+    validations:
+      required: true

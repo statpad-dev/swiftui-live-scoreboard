@@ -1,0 +1,33 @@
+name: Scoreboard
+options:
+  bundleIdPrefix: dev.statpad.blog
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+packages:
+  ScoreboardKit:
+    path: ScoreboardKit
+targets:
+  Scoreboard:
+    type: application
+    supportedDestinations: [iOS, macOS]
+    sources: [Scoreboard]
+    dependencies:
+      - package: ScoreboardKit
+    info:
+      path: Scoreboard/Info.plist
+      properties:
+        CFBundleDisplayName: Scoreboard
+        UILaunchScreen: {}
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.statpad.blog.scoreboard
+        SWIFT_VERSION: "6.0"
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        TARGETED_DEVICE_FAMILY: "1"
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_OUTGOING_NETWORK_CONNECTIONS: YES
+        CODE_SIGN_IDENTITY: "-"

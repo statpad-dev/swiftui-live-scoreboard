@@ -1,0 +1,83 @@
+{
+  "away_team": {
+    "active": true,
+    "alias": "BUF",
+    "id": "01a1d60f-67be-7bdf-ac2f-bcdeeac1da68",
+    "league": "nfl",
+    "market": "Buffalo",
+    "name": "Bills",
+    "updated_at": "2026-11-13T17:58:16.253761Z",
+    "venue_id": null,
+    "version": 1
+  },
+  "game": {
+    "attendance": null,
+    "away_score": 13,
+    "away_team_id": "01a1d60f-67be-7bdf-ac2f-bcdeeac1da68",
+    "coverage": "full",
+    "ended_at": null,
+    "game_type": "regular",
+    "home_score": 6,
+    "home_team_id": "01a1d60f-67be-7bde-8a86-89128cd484ca",
+    "id": "01a1d60f-67be-7bdd-83f4-53286521d9bb",
+    "league": "nfl",
+    "neutral_site": false,
+    "rescheduled_from_id": null,
+    "scheduled_at": "2026-11-10T01:15:00Z",
+    "season_id": "01a1d60f-67c4-76a3-8b39-1ab19df834d8",
+    "started_at": "2026-11-10T01:16:32Z",
+    "status": "inprogress",
+    "title": null,
+    "updated_at": "2026-11-13T17:58:23.310347Z",
+    "venue_id": "01a1d60f-67bf-7820-ac06-ae78a8121b7a",
+    "version": 11,
+    "week_id": "01a1d60f-67c5-7e56-abbe-e3720430d11c"
+  },
+  "home_team": {
+    "active": true,
+    "alias": "MIN",
+    "id": "01a1d60f-67be-7bde-8a86-89128cd484ca",
+    "league": "nfl",
+    "market": "Minnesota",
+    "name": "Vikings",
+    "updated_at": "2026-11-13T17:58:16.253761Z",
+    "venue_id": null,
+    "version": 1
+  },
+  "live_state": {
+    "away_score": 13,
+    "basketball": null,
+    "clock_running": null,
+    "clock_seconds": 422,
+    "football": {
+      "away_timeouts": 3,
+      "down": 1,
+      "home_timeouts": 2,
+      "yardline": 95,
+      "yards_to_go": 5
+    },
+    "game_id": "01a1d60f-67be-7bdd-83f4-53286521d9bb",
+    "home_score": 6,
+    "last_play_id": "01a1d60f-8d90-7a74-8905-46b0dc0d2751",
+    "period": 4,
+    "period_half": null,
+    "possession_team_id": "01a1d60f-67be-7bdf-ac2f-bcdeeac1da68",
+    "soccer": null,
+    "updated_at": "2026-11-13T17:58:25.937181Z",
+    "version": 264
+  },
+  "period_scores": [],
+  "seq": 1101,
+  "venue": {
+    "capacity": null,
+    "city": "Minneapolis",
+    "country": null,
+    "id": "01a1d60f-67bf-7820-ac06-ae78a8121b7a",
+    "name": "U.S. Bank Stadium",
+    "roof_type": null,
+    "state": "MN",
+    "surface": null,
+    "timezone": null,
+    "version": 1
+  }
+}

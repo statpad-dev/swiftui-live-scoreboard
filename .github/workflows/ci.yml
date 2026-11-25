@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 12 * * 1"
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+
+  app:
+    runs-on: macos-26
+    defaults:
+      run:
+        working-directory: App/ScoreboardKit
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
