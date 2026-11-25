@@ -4,6 +4,10 @@ updates:
     directory: /server
     schedule:
       interval: weekly
+    ignore:
+      # @types/node follows the oldest Node the server supports, set in package.json engines.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
